@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jonathan Joniel: student portfolio and academic planner.">
+<title>Planner | Jonathan Joniel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">Jonathan Joniel</a>
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+<nav aria-label="Main"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</header>
+<main>
+<section class="container narrow">
+<h1>Academic planner</h1>
+<p class="lead">Add assignments, readings and deadlines. Tasks are saved in this browser.</p>
+<form id="task-form" novalidate>
+<div class="row">
+<label for="task-input" class="sr-only">Task</label>
+<input id="task-input" type="text" placeholder="e.g. Finish CSC301 assignment" maxlength="100" required>
+<label for="task-date" class="sr-only">Due date</label>
+<input id="task-date" type="date">
+<button class="btn" type="submit">Add task</button>
+</div>
+<p id="task-error" class="error" role="alert"></p>
+</form>
+<div class="toolbar">
+<p id="task-count" aria-live="polite"></p>
+<div class="filters" role="group" aria-label="Filter tasks">
+<button type="button" class="chip active" data-filter="all">All</button>
+<button type="button" class="chip" data-filter="active">To do</button>
+<button type="button" class="chip" data-filter="done">Done</button>
+</div>
+</div>
+<ul id="task-list" class="tasks"></ul>
+</section>
+</main>
+<footer class="site-footer"><p>&copy; <span id="year">2026</span> Jonathan Joniel. Built with HTML, CSS and JavaScript.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

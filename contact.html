@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jonathan Joniel: student portfolio and academic planner.">
+<title>Contact | Jonathan Joniel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">Jonathan Joniel</a>
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+<nav aria-label="Main"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</header>
+<main>
+<section class="container narrow">
+<h1>Contact me</h1>
+<p class="lead">Send a message about internships, collaborations or questions.</p>
+<form id="contact-form" novalidate>
+<div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name"><p class="error" id="name-error"></p></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email"><p class="error" id="email-error"></p></div>
+<div class="field"><label for="phone">Phone number (digits only)</label><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel"><p class="error" id="phone-error"></p></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><p class="error" id="message-error"></p></div>
+<button class="btn" type="submit">Send message</button>
+<p id="form-status" class="success" role="status"></p>
+</form>
+</section>
+</main>
+<footer class="site-footer"><p>&copy; <span id="year">2026</span> Jonathan Joniel. Built with HTML, CSS and JavaScript.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
